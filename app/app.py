@@ -8,7 +8,12 @@ def home():
 
 @app.route('/api')
 def api():
-    return jsonify({"message": "This is the API endpoint"})
+    return jsonify({
+        "message": "API updated!",
+        "author": "Anish Patil",
+        "course": "DevOps"
+    })
+
 
 if __name__ == '__main__':
     app.run(debug=True)
